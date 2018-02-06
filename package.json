@@ -1,16 +1,16 @@
 {
-  "name": "react-boilerplate",
+  "name": "dblog-webapp",
   "version": "0.0.1",
-  "description": "Apptension's React Boilerplate",
+  "description": "dblog webapp",
   "repository": {
     "type": "git",
-    "url": "git://github.com/react-boilerplate/react-boilerplate.git"
+    "url": "git://github.com/dleszcz/dblog-webapp.git"
   },
   "engines": {
     "npm": ">=3",
     "node": ">=5"
   },
-  "author": "Apptension",
+  "author": "Daniel Leszczynski",
   "license": "MIT",
   "scripts": {
     "precommit": "npm run lint:eslint .",
