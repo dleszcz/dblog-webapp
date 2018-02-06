@@ -3,19 +3,20 @@ import { bindActionCreators } from 'redux';
 import { createStructuredSelector } from 'reselect';
 
 import { Home } from './home.component';
-import { MaintainersActions } from '../../modules/maintainers/maintainers.redux';
-import { selectMaintainersItems } from '../../modules/maintainers/maintainers.selectors';
-import { LocalesActions } from '../../modules/locales/locales.redux';
-import { selectLocalesLanguage } from '../../modules/locales/locales.selectors';
+import { PostsActions } from '../../modules/posts/posts.redux';
+import { selectPostsItems, selectCategories, selectActiveFilter } from '../../modules/posts/posts.selectors';
 
 const mapStateToProps = createStructuredSelector({
-  items: selectMaintainersItems,
-  language: selectLocalesLanguage,
+  posts: selectPostsItems,
+  categories: selectCategories,
+  activeFilter: selectActiveFilter,
 });
 
 export const mapDispatchToProps = (dispatch) => bindActionCreators({
-  fetchMaintainers: MaintainersActions.fetch,
-  setLanguage: LocalesActions.setLanguage,
+  fetchPostsList: PostsActions.fetchList,
+  fetchCategoriesList: PostsActions.fetchCategoriesList,
+  setActiveFilter: PostsActions.setActiveFilter,
+  searchPosts: PostsActions.searchPosts,
 }, dispatch);
 
 export default connect(mapStateToProps, mapDispatchToProps)(Home);

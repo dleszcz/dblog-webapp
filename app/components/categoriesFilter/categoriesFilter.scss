@@ -1,0 +1,28 @@
+.categories-filter {
+  display: flex;
+  flex-direction: row;
+  max-width: 80%;
+  flex-wrap: wrap;
+}
+
+.categories-filter__item {
+  margin-right: 10px;
+  margin-bottom: 10px;
+}
+
+.categories-filter__item-name {
+  border: 1px solid $main-color;
+  cursor: pointer;
+  padding: 6px 10px;
+  border-radius: 16px;
+
+  &:hover {
+    background-color: $main-color;
+    color: white;
+  }
+}
+
+.categories-filter__item-name--active {
+  background-color: $main-color;
+  color: white;
+}

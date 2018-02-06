@@ -1,0 +1,21 @@
+.header {
+  width: 100%;
+}
+
+.header__logo {
+  @include retina-sprite($logo-desktop-group);
+  display: block;
+}
+
+.header__logo-container {
+  background-color: white;
+  width: 5rem;
+  height: 5rem;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: 100%;
+  position: absolute;
+  z-index: 1;
+  margin: 3vh;
+}

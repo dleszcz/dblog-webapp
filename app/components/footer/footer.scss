@@ -1,0 +1,17 @@
+.footer {
+  height: $footer-height;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.footer__content {
+  font-size: 15px;
+}
+
+.footer__content-link {
+  color: $main-color;
+  font-weight: 600;
+  font-family: "Open Sans", sans-serif;
+  text-decoration: none;
+}
