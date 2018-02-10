@@ -39,10 +39,10 @@ export class App extends PureComponent {
     return (
       <div className="app">
         <Helmet
-          titleTemplate="%s - Apptension React Boilerplate"
-          defaultTitle="Apptension React Boilerplate"
+          titleTemplate="%s - dblog"
+          defaultTitle="dblog"
           meta={[
-            { name: 'description', content: 'Apptension React Boilerplate application' },
+            { name: 'description', content: 'dblog app' },
           ]}
         />
 
